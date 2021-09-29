@@ -1,0 +1,441 @@
+body{
+    font-family: Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    line-height: 61px;
+    padding-left: 388px;
+    float: left;
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+ul > li{
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background:url(../img/Парень.png) 90% 100%/auto 85% no-repeat, url(../img/фон.jpg) center/cover no-repeat;
+    
+}
+.title__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    
+    text-align: center;
+}
+.title__container h1{
+    font-size: 65px;
+    font-weight: bold;
+    color: #2c384a;
+}
+.title__container h4{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #79818d;
+}
+.title__container input{
+    margin: 55px 14px 0px 14px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+}
+
+.about_me h3{
+    
+    margin-top: 109px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #263244;
+    text-align: center;
+    
+}
+.about_me{
+    
+    background: url(../img/Черта\ заголовка.png) 50.1% 175px /78px 4px no-repeat, url(../img/фотка.png) 50% 235px /auto no-repeat;
+}
+#p1{
+    margin-top: 320px;
+}
+#p2{
+    margin-top: 40px;
+}
+.about_me p{
+    color: #3f495a;
+    font-size: 16px;
+    float: left;
+    padding: 0px 30%;
+}
+.about_me input{
+    margin: 39px 0px 120px 46%;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #7b7c88;
+    padding: 8px 12px 8px 34px;
+    background: url(../img/иконка.png) 8% 50% white no-repeat;
+    
+}
+
+.my_skills h3{
+    
+    font-size: 28px;
+    font-weight: bold;
+    color: #263244;
+    text-align: center;
+}
+.my_skills{
+    width: 100%;
+    height: 524px;
+    padding-top: 107px;
+    background: url(../img/Черта\ заголовка.png) 50.1% 30% /78px 4px no-repeat, url(../img/картинка\ фона.jpg) 100% /cover no-repeat;
+}
+
+.table1{
+    
+    margin: 120px 18% 0px;
+}
+.table1 tr{
+    text-align: center;
+    font-size: 15px;
+}
+.table1 td:nth-child(1) { 
+    padding-left: 35px;
+    padding-right: 35px;    
+}
+.table1 td:nth-child(2) { 
+    padding-left: 35px;
+    padding-right: 35px;   
+}
+.table1 td:nth-child(3) { 
+    padding-left: 35px;
+    padding-right: 35px; 
+}
+.table1 td:nth-child(4) { 
+    padding-left: 35px;
+    padding-right: 35px;  
+}
+.table1 td {
+    width: 11.1%; /* equal width columns */
+    box-sizing: border-box;
+}
+.table1 th{
+    font-weight: bold;
+    color: #cf7600;
+    font-size: 19px;
+    padding: 46px 0px 12px;
+}
+
+.cases h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #384354;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.cases{
+    margin-top: 104px;
+    width: 100%;
+    height: 91%;
+    background: url(../img/Черта\ заголовка.png) 50.1% 55px /78px 4px no-repeat, url(../img/фотка2.png) 50% 152px/60% auto no-repeat;
+    text-align: center;
+    font-size: 16px;
+}
+.cases table{
+    margin: 662px 20% 0px;
+    text-align: left;
+    color: #3f495a;
+}
+.cases th{
+    font-size: 22px;
+    font-weight: bold;
+    color: #384354;
+}
+.cases td:nth-child(1){
+    padding: 11px 70px 13px 3px;
+}
+.cases td:nth-child(2){
+    font-size: 18px;
+}
+/*.cases td:nth-child(1),
+.cases th:nth-child(1){
+    padding-bottom: 12px;
+}*/
+.cases tr:nth-child(1){
+    vertical-align: bottom;
+}
+.cases td:nth-child(2){
+    vertical-align: top;
+}
+.cases table p{
+    line-height: 24px;
+}
+.cases input{
+    color: white;
+    background-color: #63b5ae;
+    font-size: 17px;
+    margin-top: 8px;
+    padding: 13px 50px;
+    border-radius: 6px;
+}
+
+.prices{
+    margin-top: 195px;
+    background: url(../img/линия\ подитога.jpg) 47.8% 536px no-repeat;
+}
+.prices h3{
+    font-size: 39px;
+    color: #1c2534;
+    font-weight: bold;
+    text-align: center;
+}
+.type_of_site p,
+.type_of_design_site p,
+.adaptability p{
+    margin: 52px 0 21px 0;
+    padding-left: 26.2%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+.type_of_site select,
+.type_of_design_site select,
+.adaptability select{
+    margin-left: 26%;
+    padding-left: 20px;
+    color: #737373;
+    font-size: 15px;
+    height: 57px;
+    width: 45.5%;
+    
+    border: 1px solid #eeeeee;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url(../img/Слой\ 7\ копия\ 2.png) 97% center no-repeat;
+    
+    background-color: #eeeeee;
+}
+.sum_price{
+    margin: 48px 0 7.4% 26.2%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sum_price table{
+    width: 61.3%;
+
+}
+.sum_price td:nth-child(1){
+    text-align: left;
+    padding-bottom: 10px;
+}
+.sum_price td:nth-child(2){
+    text-align: right;
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.stats{
+    padding-top: 105px;
+    height: 505px;
+    letter-spacing: -2px;
+    background: url(../img/Черта\ заголовка.png) 50.1% 156px /78px 4px no-repeat, url(../img/фон2.jpg) 100%/cover no-repeat;
+}
+.stats h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #323e4f;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.stats table{
+    margin: 114px 0 0 18% ;
+    width: 63%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323e4f;
+}
+.stats td:nth-child(1),
+.stats td:nth-child(2),
+.stats td:nth-child(3),
+.stats td:nth-child(4){
+    padding-bottom: 2%;
+
+}
+.stats th{
+    font-size: 37px;
+    padding-bottom: 2%;
+}
+
+.review{
+    padding-top: 107px;
+    height: 600px;
+    background: url(../img/Черта\ заголовка.png) 50% 165px /73px 4px no-repeat, url(../img/фотка3.png) 50% 215px no-repeat, url(../img/Оранж.png) 48.8% 500px no-repeat, url(../img/Оранж\ копия.png) 50% 500px no-repeat, url(../img/Оранж\ копия\ 2.png) 51.2% 500px no-repeat;
+}
+.review h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #243042;
+    text-align: center;
+    margin-bottom: 215px;
+}
+.review p{
+    margin: 20px 33% 40px;
+    text-align: center;
+    font-size: 17px;
+    color: #243042;
+}
+.review > p{
+    margin-left: 31%;
+}
+
+.my_contacts{
+    padding-top: 107px;
+    height: 825px;
+    background:  url(../img/Черта\ заголовка.png) 49.77% 162px /73px 4px no-repeat, url(../img/Фон3.jpg) 100%/cover no-repeat;
+    color: white;
+}
+.my_contacts h3{
+    font-size: 28px;
+    font-weight: bold;
+    /*text-align: center;*/
+    padding-left: 44%;
+    margin-bottom: 65px;
+}
+.my_contacts p{
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 42px;
+}
+.my_contacts table{
+    padding: 0 31.5%;
+    text-align: center;
+    width: 99%;
+}
+.my_contacts td:nth-child(1),
+.my_contacts td:nth-child(2),
+.my_contacts td:nth-child(3){
+    vertical-align: top;
+    padding-bottom: 12px;
+    line-height: 22px;
+}
+.send_sms h5{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 0 48px;
+}
+.data{
+    padding-left: 31%;
+}
+.data > input{
+    width: 26.5%;
+    height: 34px;
+    margin-right: 2%;
+    padding: 0 12px;
+    margin-bottom: 12px;
+    color: #5d5d5e;
+    background-color: #d2d6dc;
+    font-size: 15px;
+}
+.data textarea{
+    width: 55.3%;
+    height: 94px;
+    padding: 10px 12px;
+    color: #5d5d5e;
+    background-color: #d2d6dc;
+    font-size: 15px;
+    resize: none;
+    margin-bottom: 28px;
+}
+.send input{
+    width: auto;
+    height: 49px;
+    margin-left: 22.5%;
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    border: white solid 2.8px;
+    border-radius: 6px;
+}
+.media table{
+    margin-left: -21.7%;
+    width: 98.8%;
+    margin-top: 72px;
+}
+.media td:nth-child(3){
+    vertical-align: bottom;
+    text-align: right;
+}
+.media td:nth-child(2){
+    vertical-align:middle;
+    text-align: right;
+}
+.media td:nth-child(6){
+    text-align: left;
+    vertical-align: bottom;
+}
+.media td:nth-child(1),
+.media td:nth-child(2),
+.media td:nth-child(3),
+.media td:nth-child(4),
+.media td:nth-child(5),
+.media td:nth-child(6){
+    padding: 0 25px;
+}
+
+.map{
+    margin-bottom: -7px;
+    height: 365px;
+    background: url(../img/Карта\ копия.png) 100%/cover no-repeat;
+}
+.map input{
+    margin: 148px 45.1% 0;
+    width: 7%;
+    height: 49px;
+    padding: 13px 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border: white solid 2px;
+    box-shadow:0 9px 7px rgba(85, 84, 84, 0.318);
+    
+    background-color: white;
+}
+
+.copyrighting{
+    height: 92px;
+    color: white;
+    background-color: #354051;
+}
+.copyrighting p{
+    letter-spacing: -1px;
+    padding: 42px 0 0 43.2%;
+    font-size: 15.5px;
+}
+
+
