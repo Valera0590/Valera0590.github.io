@@ -1,0 +1,109 @@
+/*html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.header{
+    text-align: center;
+    padding-top: 10%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    transform-style: inherit;
+    width: 100vw;
+    background: url(../img/Черта\ заголовка.png) 50.1% 156px /78px 4px no-repeat;
+}
+.header::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+    z-index: -1px;
+    transform-origin: center;
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1531114181037-5e61a592cf2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23dbfaafedbf9400522ef9c47334f99a&auto=format&fit=crop&w=1350&q=80') cover no-repeat;
+
+    transform: translateZ(0px) scale(2);
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px; 
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+  transform-style: inherit;
+  width: 100vw;
+}
+header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 100vh;
+  background-image: url(../img/фон2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+ параллакс
+  transform: translateZ(-1px) scale(1);
+}
+header h1 {
+  margin-top: -100px;
+  font-size: 42px;
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.parallax__image{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110% ;
+}
+.parallax__image:nth-child(1){
+    background-image: url(../img/фон.jpg);
+}
+.parallax__image:nth-child(2){
+    background-image: url(../img/фон2.jpg);
+    
+}
+.parallax__image:nth-child(3){
+    background-image: url(../img/Фон3.jpg);
+}
+

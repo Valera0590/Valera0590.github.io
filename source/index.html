@@ -13,43 +13,72 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!--<div class="loader" id="loader1">
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+</div>-->
 <body>
+    <div class="overlay"></div>
     
+    <div class="cssload-dots">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+    </div>
+    
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                
+            </filter>
+        </defs>
+    </svg>
     <header>
         <nav>
             <div class="logo"> Андрей Браун </div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="https://google.com">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
 
-    <div class="main">
-        <div class="title__container">
-            <h1>Привет <br> Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
-        
-        </div>
-    </div>
-    <div class="about_me">\
+    <main>
+        <section class="main">
+            <div class="title__container">
+                <h1>Привет <br> Я Андрей Браун</h1>
+                <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+            
+            </div>
+        </section>
+    
+    <section class="about_me">
         
         <h3>ОБО МНЕ</h3>
+        <div class="img1"> </div>
+        <div class="img2"> </div>
         <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis molestiae fugit. Quis provident itaque nesciunt possimus placeat ab aliquid.</p>
         <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto qui vitae officia! Quae nobis harum at dolor dolorem amet reiciendis?</p> 
-        <input type="submit" value="Скачать резюме">
-    </div>
-    <div class="my_skills">
+        <input type="button" value="Скачать резюме">
+    </section>
+    <section class="my_skills">
         <h3>ЧТО Я УМЕЮ</h3>
+        <div class="img3"> </div>
         <div class="table1">
             <table>
                 <tr>
@@ -72,12 +101,14 @@
                 </tr>
             </table>
         </div>
-    </div>
-    <div class="cases">
+    </section>
+    <section class="cases">
         <h3>КЕЙСЫ</h3>
+        <div class="img4"> </div>
         <!--<img src="img/Черта заголовка.png" alt=""><br>-->
         <p>Lipsum dolor sit amet consectetur adipisicing elit. Fuga consectetur impedit voluptatibus aut voluptas est?</p>
         <!--<img src="img/фотка2.png" alt="" width="75%">-->
+        <div class="img5"> </div>
         <table>
             <tr>
                 <th>CLIENT:</th>
@@ -92,17 +123,17 @@
                 
             </tr>
             <tr>
-                <!--<td><a href="http://www.somedomain.com" target="" title="Some info about site"> http://www.somedomain.com</a></td>-->
-                <td>http://www.somedomain.com</td>
+                <td><a href="http://www.somedomain.com" target="" title="Some info about site"> http://www.somedomain.com</a></td>
+                <!--<td>http://www.somedomain.com</td>-->
                 
             </tr>
             <tr>
-                <td><input type="submit" value="VISIT LIVE SITE"></td>
+                <td><input type="button" value="VISIT LIVE SITE"></td>
             </tr>
         </table>
         
-    </div>
-    <div class="prices">
+    </section>
+    <section class="prices">
         <h3>Расчет стоимости</h3>
         <div class="type_of_site">
             <p>ТИП САЙТА</p>
@@ -135,10 +166,10 @@
                 </tr>
             </table>
         </div>
-    </div>
-    <div class="stats">
+    </section>
+    <section class="stats">
         <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        
+        <div class="img6"> </div>
         <table>
             <tr>
                 <td>
@@ -167,17 +198,20 @@
                 <td>НАГРАД ПОЛУЧЕНО</td>
             </tr>
         </table>
-    </div>
-    <div class="review">
+    </section>
+    <section class="review">
         <h3>ОТЗЫВЫ</h3>
+        <div class="img7"> </div>
+        <div class="img8"> </div>
         <!--<img src="img/Черта заголовка.png" alt=""><br>
         <img src="img/фотка3.png" alt="">-->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
         <div><p><b>Михаил</b>, Ген директор ПАО "Газпром".</p></div>
         <!--<img src="img/Оранж.png" alt=""> <img src="img/Оранж копия.png" alt=""> <img src="img/Оранж копия 2.png" alt="">-->
-    </div>
-    <div class="my_contacts">
+    </section>
+    <section class="my_contacts">
         <h3>МОИ КОНТАКТЫ</h3>
+        <div class="img9"> </div>
         <!--<img src="img/Черта заголовка.png" alt=""><br>-->
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt quam.</p>
         <table>
@@ -198,10 +232,12 @@
         <div class="send_sms">
             <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5>
             <div class="data">
-                <input type="text" name="name1" placeholder="Имя" id="">
-                <input type="text" name="email1" placeholder="Email" id=""> <br>
-                <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение"></textarea> <br>
-                <div class="send"><input type="submit" value="Отправить"></div>
+                <form action="a">
+                    <input type="text" name="name1" placeholder="Имя" id="">
+                    <input type="text" name="email1" placeholder="Email" id=""> <br>
+                    <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение"></textarea> <br>
+                    <div class="send"><input type="submit" value="Отправить"></div>
+                </form>
                 <div class="media">
                     <table>
                         <tr>
@@ -216,18 +252,24 @@
                 </div>
             </div>
         </div>
-    
-    </div>
-    <div class="map">
+    </section>
+    <section class="map">
         <!--<img src="img/Карта копия.png" alt="">-->
         <input type="submit" value="I'M HERE"> 
-    </div>
-
-    
-
-    <div class="copyrighting">
+    </section>
+    <section class="copyrighting">
         <!--<h6>Copyright © 2021 Андрей Браун. Design by Web</h6>-->
         <p>Copyright © 2021 Андрей Браун. Design by Web</p>
-    </div>
+    </section>
+</main>
+<!--<div class="preloader"></div>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<script>
+    $(document).ready(function() {
+      $('.overlay, .cssload-dots').fadeOut();
+    });
+</script>
 </body>
 </html>
+
+
