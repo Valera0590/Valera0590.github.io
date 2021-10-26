@@ -11,6 +11,7 @@
 
     <title>Андрей Браун - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <!--<div class="loader" id="loader1">
@@ -30,7 +31,7 @@
         <div class="cssload-dot"></div>
     </div>
     
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <filter id="goo">
                 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
@@ -38,228 +39,460 @@
                 
             </filter>
         </defs>
-    </svg>
+    </svg>-->
     <header>
         <nav>
-            <div class="logo"> Андрей Браун </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="https://google.com">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo"> Андрей Браун </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="https://google.com">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              Навигация
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark drop-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a href="https://google.com">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
             </div>
-
         </nav>
     </header>
 
     <main>
         <section class="main">
-            <div class="title__container">
-                <h1>Привет <br> Я Андрей Браун</h1>
-                <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
-            
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    
+                    <div class="col-lg-7 col-12 d-flex flex-column justify-content-center mt-5 pt-5">
+                        <div class="title__container">
+                            <h1>Привет <br> Я Андрей Браун</h1>
+                            <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
+            
         </section>
     
     <section class="about_me">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>ОБО МНЕ</h3>
+                    <div class="img1"> </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="img2"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-2 offset-sm-1 col-xl-8 col-sm-10 ">
+                    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium libero blanditiis reiciendis minus, reprehenderit inventore repudiandae hic eos tempore temporibus, deleniti vero ipsum quis quos!</p>
+                    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officiis debitis veniam animi molestias facere illo quia ut blanditiis cumque eligendi mollitia, quas, possimus saepe?</p> 
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <input type="button" value="Скачать резюме">
+                </div>
+            </div>
+        </div>
+       
         
-        <h3>ОБО МНЕ</h3>
-        <div class="img1"> </div>
-        <div class="img2"> </div>
-        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis molestiae fugit. Quis provident itaque nesciunt possimus placeat ab aliquid.</p>
-        <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto qui vitae officia! Quae nobis harum at dolor dolorem amet reiciendis?</p> 
-        <input type="button" value="Скачать резюме">
     </section>
     <section class="my_skills">
-        <h3>ЧТО Я УМЕЮ</h3>
-        <div class="img3"> </div>
-        <div class="table1">
-            <table>
-                <tr>
-                    <td><img src="img/ноут.png" alt=""></td>
-                    <td><img src="img/знак.png" alt=""></td>
-                    <td><img src="img/ракета.png" alt=""></td>
-                    <td><img src="img/граммофон.png" alt=""></td>
-                </tr>
-                <tr>
-                    <th>Веб-дизайн</th>
-                    <th>Разработка</th>
-                    <th>CEO-Оптимизация</th>
-                    <th>Маркетинг</th>
-                </tr>
-                <tr>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
-                </tr>
-            </table>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>ЧТО Я УМЕЮ</h3>
+                    <div class="img3"> </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="table1">
+                        <table>
+                            <tr>
+                                <td><img src="img/ноут.png" alt=""></td>
+                                <td><img src="img/знак.png" alt=""></td>
+                                <td><img src="img/ракета.png" alt=""></td>
+                                <td><img src="img/граммофон.png" alt=""></td>
+                            </tr>
+                            <tr>
+                                <th>Веб-дизайн</th>
+                                <th>Разработка</th>
+                                <th>CEO-Оптимизация</th>
+                                <th>Маркетинг</th>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt dolor alias, doloribus odio nesciunt.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="cases">
-        <h3>КЕЙСЫ</h3>
-        <div class="img4"> </div>
-        <!--<img src="img/Черта заголовка.png" alt=""><br>-->
-        <p>Lipsum dolor sit amet consectetur adipisicing elit. Fuga consectetur impedit voluptatibus aut voluptas est?</p>
-        <!--<img src="img/фотка2.png" alt="" width="75%">-->
-        <div class="img5"> </div>
-        <table>
-            <tr>
-                <th>CLIENT:</th>
-                <th>Название проекта</th>
-            </tr>
-            <tr>
-                <td>Какая-то компания</td>
-                <td rowspan="4"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid deserunt pariatur necessitatibus, magnam error ratione voluptates rerum sapiente non repellat quibusdam placeat architecto ut facilis, tempora sequi neque ipsum modi consequuntur debitis voluptatem nesciunt sed veritatis!</p></td>
-            </tr>
-            <tr>
-                <th>WEBSITE:</th>
-                
-            </tr>
-            <tr>
-                <td><a href="http://www.somedomain.com" target="" title="Some info about site"> http://www.somedomain.com</a></td>
-                <!--<td>http://www.somedomain.com</td>-->
-                
-            </tr>
-            <tr>
-                <td><input type="button" value="VISIT LIVE SITE"></td>
-            </tr>
-        </table>
-        
-    </section>
-    <section class="prices">
-        <h3>Расчет стоимости</h3>
-        <div class="type_of_site">
-            <p>ТИП САЙТА</p>
-            <select name="list_type1" id="list_type1" >
-                <option value="Opt1">Выберите пункт...</option>
-            </select>
-        </div>
-        <div class="type_of_design_site">
-            <p>ДИЗАЙН</p>
-            <select name="list_type2" id="list_type2" >
-                <option value="Opt1">Выберите пункт...</option>
-            </select>
-        </div>
-        <div class="adaptability">
-            <p>АДАПТИВНОСТЬ</p>
-            <select name="list_type3" id="list_type3" >
-                <option value="Opt1">Выберите пункт...</option>
-            </select>
-        </div>
-        
-        <div class="sum_price">
-            <table >
-                <tr>
-                    <td>Сроки</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Стоимость</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section class="stats">
-        <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        <div class="img6"> </div>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/смайл.png" alt="" >
-                </td>
-                <td>
-                    <img src="img/скобки.png" alt="" >
-                </td>
-                <td>
-                    <img src="img/галочка.png" alt="" >
-                </td>
-                <td>
-                    <img src="img/кубок.png" alt="" >
-                </td>
-            </tr>
-            <tr>
-                <th>120</th>
-                <th>4,600</th>
-                <th>340</th>
-                <th>23</th>
-            </tr>
-            <tr>
-                <td>СЧАСТЛИВЫХ КЛИЕНТОВ</td>
-                <td>ЧАСОВ РАБОТЫ</td>
-                <td>ПРОЕКТОВ ЗАВЕРШЕНО</td>
-                <td>НАГРАД ПОЛУЧЕНО</td>
-            </tr>
-        </table>
-    </section>
-    <section class="review">
-        <h3>ОТЗЫВЫ</h3>
-        <div class="img7"> </div>
-        <div class="img8"> </div>
-        <!--<img src="img/Черта заголовка.png" alt=""><br>
-        <img src="img/фотка3.png" alt="">-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
-        <div><p><b>Михаил</b>, Ген директор ПАО "Газпром".</p></div>
-        <!--<img src="img/Оранж.png" alt=""> <img src="img/Оранж копия.png" alt=""> <img src="img/Оранж копия 2.png" alt="">-->
-    </section>
-    <section class="my_contacts">
-        <h3>МОИ КОНТАКТЫ</h3>
-        <div class="img9"> </div>
-        <!--<img src="img/Черта заголовка.png" alt=""><br>-->
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt quam.</p>
-        <table>
-            <tr>
-                <td><img src="img/гео.png" alt=""></td>
-                <td><img src="img/конверт.png" alt=""></td>
-                <td><img src="img/труба.png" alt=""></td>
-            </tr>
-            <tr>
-                <td><span>Санкт-Петербург <br> Невский проспект 11</span></td>
-                <td><span>info@companyname.com</span></td>
-                <td><span>+7 999 999-99-99</span></td>
-                    
-                
-            </tr>
-        </table>
-        
-        <div class="send_sms">
-            <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5>
-            <div class="data">
-                <form action="a">
-                    <input type="text" name="name1" placeholder="Имя" id="">
-                    <input type="text" name="email1" placeholder="Email" id=""> <br>
-                    <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение"></textarea> <br>
-                    <div class="send"><input type="submit" value="Отправить"></div>
-                </form>
-                <div class="media">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>КЕЙСЫ</h3>
+                    <div class="img4"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col par-cases">
+                    <p>Lipsum dolor sit amet consectetur adipisicing elit. Fuga consectetur impedit voluptatibus aut voluptas est?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="img5"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col case-tab1">
                     <table>
                         <tr>
-                            <td><img src="img/фб.png" alt=""></td>
-                            <td><img src="img/твитер.png" alt=""></td>
-                            <td><img src="img/мяч.png" alt=""></td>
-                            <td><img src="img/киса.png" alt=""></td>
-                            <td><img src="img/инст.png" alt=""></td>
-                            <td><img src="img/ин.png" alt=""></td>
+                            <th>CLIENT:</th>
+                            <th>Название проекта</th>
+                        </tr>
+                        <tr>
+                            <td>Какая-то компания</td>
+                            <td rowspan="4">
+                                <div class="cell_2_col"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid deserunt pariatur necessitatibus, magnam error ratione voluptates rerum sapiente non repellat quibusdam placeat architecto ut facilis, tempora sequi neque ipsum modi consequuntur debitis voluptatem nesciunt sed veritatis!</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>WEBSITE:</th>
+                            
+                        </tr>
+                        <tr>
+                            <td><a href="http://www.somedomain.com" target="" title="Some info about site"> http://www.somedomain.com</a></td>
+                            <!--<td>http://www.somedomain.com</td>-->
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Перейти на сайт"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col case-tab2">
+                    <table>
+                        <tr>
+                            <th>CLIENT:</th>
+                        </tr>
+                        <tr>
+                            <td>Какая-то компания</td>
+                        </tr>
+                        <tr>
+                            <th>Название проекта</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid deserunt pariatur necessitatibus, magnam error ratione voluptates rerum sapiente non repellat quibusdam placeat architecto ut facilis, tempora sequi neque ipsum modi consequuntur debitis voluptatem nesciunt sed veritatis!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>WEBSITE:</th>
+                        </tr>
+                        <tr>
+                            <td><a href="http://www.somedomain.com" target="" title="Some info about site"> http://www.somedomain.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Перейти на сайт"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="prices">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 border-cont">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h3>Расчет стоимости</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="type_of_site">
+                            <p>ТИП САЙТА</p>
+                            <select name="list_type1" id="list_type1" >
+                                <option value="Opt1">Выберите пункт...</option>
+                            </select>
+                        </div>
+                        <div class="type_of_design_site">
+                            <p>ДИЗАЙН</p>
+                            <select name="list_type2" id="list_type2" >
+                                <option value="Opt1">Выберите пункт...</option>
+                            </select>
+                        </div>
+                        <div class="adaptability">
+                            <p>АДАПТИВНОСТЬ</p>
+                            <select name="list_type3" id="list_type3" >
+                                <option value="Opt1">Выберите пункт...</option>
+                            </select>
+                        </div>
+                        <div class="img_itog"> </div>
+                        <div class="sum_price">
+                            <table >
+                                <tr>
+                                    <td>Сроки</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Стоимость</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <input type="button" value="Оставить заявку">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="stats">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>НЕМНОГО СТАТИСТИКИ</h3>
+                    <div class="img6"> </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col table2">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/смайл.png" alt="" >
+                            </td>
+                            <td>
+                                <img src="img/скобки.png" alt="" >
+                            </td>
+                            <td>
+                                <img src="img/галочка.png" alt="" >
+                            </td>
+                            <td>
+                                <img src="img/кубок.png" alt="" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>120</th>
+                            <th>4,600</th>
+                            <th>340</th>
+                            <th>23</th>
+                        </tr>
+                        <tr>
+                            <td>СЧАСТЛИВЫХ КЛИЕНТОВ</td>
+                            <td>ЧАСОВ РАБОТЫ</td>
+                            <td>ПРОЕКТОВ ЗАВЕРШЕНО</td>
+                            <td>НАГРАД ПОЛУЧЕНО</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
     </section>
-    <section class="map">
-        <!--<img src="img/Карта копия.png" alt="">-->
-        <input type="submit" value="I'M HERE"> 
+
+    <section class="review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>ОТЗЫВЫ</h3>
+                    <div class="img7"> </div>
+                    <div class="img8"> </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-11 col rev-par">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 rev-par1">
+                    <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="img-t1"> </div>
+                    <div class="img-t2"> </div>
+                    <div class="img-t3"> </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="my_contacts">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h3>МОИ КОНТАКТЫ</h3>
+                    <div class="img9"> </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt quam.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-sm-11 cont-tab">
+                    <table>
+                        <tr>
+                            <td><img src="img/гео.png" alt=""></td>
+                            <td><img src="img/конверт.png" alt=""></td>
+                            <td><img src="img/труба.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><span>Санкт-Петербург <br> Невский проспект 11</span></td>
+                            <td><span>info@companyname.com</span></td>
+                            <td><span>+7 999 999-99-99</span></td>
+                                
+                            
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-auto cont-tab-small">
+                    <table>
+                        <tr>
+                            <td><img src="img/гео.png" alt=""></td>
+                            <td><span>Санкт-Петербург <br> Невский проспект 11</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/конверт.png" alt=""></td>
+                            <td><span>info@companyname.com</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/труба.png" alt=""></td>
+                            <td><span>+7 999 999-99-99</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="send_sms">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="data">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-9 col-md-10 col">
+                            <form action="a">
+                                <input type="text" name="name1" placeholder="Имя" class="inp1" id="">
+                                <input type="text" name="email1" placeholder="Email" class="inp2" id=""> <br>
+                                <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение"></textarea> <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <div class="send"><input type="submit" value="Отправить"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8 col-sm-10 cont-tab">
+                                <table>
+                                    <tr>
+                                        <td><img src="img/фб.png" alt=""></td>
+                                        <td><img src="img/твитер.png" alt=""></td>
+                                        <td><img src="img/мяч.png" alt=""></td>
+                                        <td><img src="img/киса.png" alt=""></td>
+                                        <td><img src="img/инст.png" alt=""></td>
+                                        <td><img src="img/ин.png" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-9 cont-tab-small">
+                                <table>
+                                    <tr>
+                                        <td><img src="img/фб.png" alt=""></td>
+                                        <td><img src="img/твитер.png" alt=""></td>
+                                        <td><img src="img/мяч.png" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="img/киса.png" alt=""></td>
+                                        <td><img src="img/инст.png" alt=""></td>
+                                        <td><img src="img/ин.png" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <input type="button" value="I'M HERE"> 
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="copyrighting">
-        <!--<h6>Copyright © 2021 Андрей Браун. Design by Web</h6>-->
-        <p>Copyright © 2021 Андрей Браун. Design by Web</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p>Copyright © 2021 Андрей Браун. Design by Web</p>
+                </div>
+            </div>
+        </div>        
     </section>
 </main>
 <!--<div class="preloader"></div>-->
@@ -269,6 +502,7 @@
       $('.overlay, .cssload-dots').fadeOut();
     });
 </script>
+<script src="js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>
 
