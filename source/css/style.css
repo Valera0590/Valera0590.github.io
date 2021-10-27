@@ -485,24 +485,48 @@ nav{
     opacity: 93%;
     position: fixed;
 }
+
 .logo{
     color: #ffffff;
     font-size: 28px;
     line-height: 61px;
     float: left;
-    padding-left: 6%;
+    padding-left: 40%;
+
     animation: coming 3s ease;
     -o-animation: coming 3s ease;
     -moz-animation: coming 3s ease;
     -webkit-animation: coming 3s ease;
+
 }
-@media (max-width: 340px){
+.fix-con{
+  position: fixed;
+
+}
+@media (max-width: 1399px){
+  .logo{
+      padding-left: 27%;
+  }
+}
+@media (max-width: 1199px){
+  .logo{
+      padding-left: 23%;
+  }
+}
+@media (max-width: 991px){
+  .logo{
+      padding-left: 13%;
+  }
+}
+@media (max-width: 370px){
     .logo{
         font-size: 24px;
+        padding-left: 5%;
     }
 }
 .menu{
     float: left;
+
 }
 .menu li{
     float: left;
@@ -544,7 +568,7 @@ nav .dropdown-menu li a{
     border-width: 3px;
     border-radius: 5px;
     font-size: 17px;
-    opacity: 100%;
+    z-index: 1000;
 }
 .drop-menu li a{
     color: white;
@@ -563,6 +587,7 @@ nav .dropdown-menu li a{
     padding: 6px 0 6px 20px;
     min-width: 9rem;
     font-size: 16px;
+    
 }
 
 
@@ -574,7 +599,80 @@ nav .dropdown-menu li a{
         opacity: 1;
     }
 }
+@-o-keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-ms-keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-moz-keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 @keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@-o-keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@-ms-keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@-webkit-keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@-moz-keyframes topshift{
     from{
         opacity: 0;
         margin-top: -80px;
@@ -904,7 +1002,24 @@ main{
     -webkit-animation-delay: 3.3s;
     opacity: 0;
 }
+.skills-tab2{
+    display: none;
+    margin: 55px 0 3%;
+    animation: appearance__X 1.2s cubic-bezier(.31,.74,.57,.87) forwards;
+    -o-animation: appearance__X 1.2s cubic-bezier(.31,.74,.57,.87) forwards;
+    -moz-animation: appearance__X 1.2s cubic-bezier(.31,.74,.57,.87) forwards;
+    -webkit-animation: appearance__X 1.2s cubic-bezier(.31,.74,.57,.87) forwards;
+    animation-delay: 3.3s;
+    -o-animation-delay: 3.3s;
+    -moz-animation-delay: 3.3s;
+    -webkit-animation-delay: 3.3s;
+    opacity: 0;
+}
 .table1 tr{
+    text-align: center;
+    font-size: 15px;
+}
+.skills-tab2 tr{
     text-align: center;
     font-size: 15px;
 }
@@ -933,7 +1048,13 @@ main{
     font-weight: bold;
     color: #cf7600;
     font-size: 19px;
-    padding: 2.5% 0px 12px;
+    padding: 2.5% 0 12px;
+}
+.skills-tab2 th{
+    font-weight: bold;
+    color: #cf7600;
+    font-size: 19px;
+    padding: 2.5% 0 12px;
 }
 @media (max-width: 767px){
     .table1 {
@@ -957,8 +1078,22 @@ main{
     }
 }
 @media (max-width: 445px){
+    .skills-tab2{
+        display: table;
+    }
     .table1{
-        overflow-x: auto;
+        display: none;
+    }
+    .skills-tab2 td{
+        padding: 0 12% 3.5%;
+    }
+    .my_skills{
+        height: 910px;
+    }
+}
+@media (max-width: 352px){
+    .my_skills{
+        height: 950px;
     }
 }
 
@@ -1092,6 +1227,9 @@ main{
 .cases table p{
     line-height: 18px;
     margin-bottom: 0;
+}
+.cases table a{
+    color: #3f495a;
 }
 .cases input{
     color: white;
@@ -1316,6 +1454,9 @@ main{
     font-weight: bold;
     color: #323e4f;
 }
+.stats-tab2{
+    display: none;
+}
 .stats td:nth-child(1),
 .stats td:nth-child(2),
 .stats td:nth-child(3),
@@ -1357,13 +1498,29 @@ main{
     }   
 }
 @media (max-width: 400px){
-    .table2{
-        overflow-x: auto;
+    .stats-tab1{
+        display: none;
+    }
+    .stats-tab2{
+        display: table;
+        padding-right: 5%;
+        margin-top: 20px;
+    }
+    .stats{
+        height: 560px;
+    }
+}
+@media (max-width: 345px){
+    .stats{
+        height: 600px;
+    }
+    .stats-tab2{
+        padding-right: 10%;
     }
 }
 @media (max-width: 325px){
     .stats{
-        height: 425px;
+        height: 640px;
     }
 }
 
