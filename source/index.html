@@ -40,7 +40,7 @@
             </filter>
         </defs>
     </svg>-->
-    <header>
+    <header id="top">
         <nav>
             <div class="fix-con w-100">
                 <div class="container">
@@ -51,12 +51,12 @@
                         <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-2 d-none d-lg-block">
                             <div class="menu">
                                 <ul>
-                                    <li><a href="https://google.com">Обо мне</a></li>
-                                    <li><a href="#">Услуги</a></li>
-                                    <li><a href="#">Кейсы</a></li>
-                                    <li><a href="#">Прайс</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a class="menu_link active_menu" href="#about_me">Обо мне</a></li>
+                                    <li><a class="menu_link" href="#skills">Услуги</a></li>
+                                    <li><a class="menu_link" href="#cases">Кейсы</a></li>
+                                    <li><a class="menu_link" href="#prices">Прайс</a></li>
+                                    <li><a class="menu_link" href="#review">Отзывы</a></li>
+                                    <li><a class="menu_link" href="#my_contacts">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -66,12 +66,12 @@
                                   Навигация
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark drop-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="https://google.com">Обо мне</a></li>
-                                    <li><a class="dropdown-item" href="#">Услуги</a></li>
-                                    <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                                    <li><a class="dropdown-item" href="#">Прайс</a></li>
-                                    <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                    <li><a class="dropdown-item active" href="#about_me">Обо мне</a></li>
+                                    <li><a class="dropdown-item" href="#skills">Услуги</a></li>
+                                    <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+                                    <li><a class="dropdown-item" href="#prices">Прайс</a></li>
+                                    <li><a class="dropdown-item" href="#review">Отзывы</a></li>
+                                    <li><a class="dropdown-item" href="#my_contacts">Контакты</a></li>
                                 </ul>
                               </div>
                         </div>
@@ -82,6 +82,11 @@
     </header>
 
     <main>
+        <div class="upper_container">
+            <div class="upper_body">
+                <a href="#top"><img src="img/button-up5.png" alt="стрелка вверх"></a>
+            </div>
+        </div>
         <section class="main">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -101,17 +106,17 @@
             
         </section>
     
-    <section class="about_me">
+    <section class="section about_me" id="about_me">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <h3>ОБО МНЕ</h3>
-                    <div class="img1"> </div>
+                    <h3 class="element-animationX">ОБО МНЕ</h3>
+                    <div class="img1 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col">
-                    <div class="img2"> </div>
+                    <div class="img2 uploaded"> <img src="img/фотка_bad.png" data-src="img/фотка_good.png" alt="фото в круглой рамке" > </div>
                 </div>
             </div>
             <div class="row">
@@ -122,24 +127,24 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <input type="button" value="Скачать резюме">
+                    <input class="element-animationX" type="button" value="Скачать резюме">
                 </div>
             </div>
         </div>
        
         
     </section>
-    <section class="my_skills">
+    <section class="section my_skills" id="skills">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <h3>ЧТО Я УМЕЮ</h3>
-                    <div class="img3"> </div>
+                    <h3 class="element-animationX">ЧТО Я УМЕЮ</h3>
+                    <div class="img3 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col">
-                    <div class="table1">
+                    <div class="table1 element-animationX">
                         <table>
                             <tr>
                                 <td><img src="img/ноут.png" alt=""></td>
@@ -162,7 +167,7 @@
                         </table>
                     </div>
                 
-                    <div class="skills-tab2">
+                    <div class="skills-tab2 element-animationX">
                         <table>
                             <tr>
                                 <td><img src="img/ноут.png" alt=""></td>
@@ -206,12 +211,12 @@
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section class="section cases" id="cases">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <h3>КЕЙСЫ</h3>
-                    <div class="img4"> </div>
+                    <div class="img4 element-animationX"> </div>
                 </div>
             </div>
             <div class="row">
@@ -221,12 +226,12 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="img5"> </div>
+                    <div class="img5 uploaded element-animation"> <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" > </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col case-tab1">
-                    <table>
+                    <table class="element-animation">
                         <tr>
                             <th>CLIENT:</th>
                             <th>Название проекта</th>
@@ -253,7 +258,7 @@
                     </table>
                 </div>
                 <div class="col case-tab2">
-                    <table>
+                    <table class="element-animation">
                         <tr>
                             <th>CLIENT:</th>
                         </tr>
@@ -283,7 +288,7 @@
         </div>    
     </section>
 
-    <section class="prices">
+    <section class="section prices" id="prices">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10 border-cont">
@@ -340,11 +345,11 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <h3>НЕМНОГО СТАТИСТИКИ</h3>
-                    <div class="img6"> </div>
+                    <div class="img6 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col stats-tab1">
+                <div class="col stats-tab1 visible">
                     <table>
                         <tr>
                             <td>
@@ -361,10 +366,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>120</th>
-                            <th>4,600</th>
-                            <th>340</th>
-                            <th>23</th>
+                            <th class="benefits__number">120</th>
+                            <th class="benefits__number">4600</th>
+                            <th class="benefits__number">340</th>
+                            <th class="benefits__number">23</th>
                         </tr>
                         <tr>
                             <td>СЧАСТЛИВЫХ КЛИЕНТОВ</td>
@@ -374,7 +379,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col stats-tab2">
+                <div class="col stats-tab2 visible">
                     <table>
                         <tr>
                             <td>
@@ -385,8 +390,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>120</th>
-                            <th>4,600</th>
+                            <th class="benefits__number">120</th>
+                            <th class="benefits__number">4600</th>
                         </tr>
                         <tr>
                             <td>СЧАСТЛИВЫХ КЛИЕНТОВ</td>
@@ -401,8 +406,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>340</th>
-                            <th>23</th>
+                            <th class="benefits__number">340</th>
+                            <th class="benefits__number">23</th>
                         </tr>
                         <tr>
                             <td>ПРОЕКТОВ ЗАВЕРШЕНО</td>
@@ -414,13 +419,13 @@
         </div>
     </section>
 
-    <section class="review">
+    <section class="section review" id="review">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <h3>ОТЗЫВЫ</h3>
-                    <div class="img7"> </div>
-                    <div class="img8"> </div>
+                    <div class="img7 element-animationX"> </div>
+                    <div class="img8 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -443,12 +448,12 @@
         </div>
     </section>
 
-    <section class="my_contacts">
+    <section class="section my_contacts" id="my_contacts">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <h3>МОИ КОНТАКТЫ</h3>
-                    <div class="img9"> </div>
+                    <div class="img9 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -555,6 +560,7 @@
     </section>
 
     <section class="map">
+        <div class="img_map uploaded"> <img src="img/карта_bad.jpg" data-src="img/карта_good.jpg" alt="карта google"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -574,13 +580,8 @@
         </div>        
     </section>
 </main>
-<!--<div class="preloader"></div>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-<script>
-    $(document).ready(function() {
-      $('.overlay, .cssload-dots').fadeOut();
-    });
-</script>
+
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"> </script>
 <script src="js/myScript.js"></script>
 </body>
