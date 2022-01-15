@@ -493,8 +493,8 @@ body{
     opacity: 0.95;
 }
 .invisible{
-    transition: opacity 0.3s;
     opacity: 0;
+    transition: opacity 0.3s;
 }
 .upper_body img{
     position: absolute;
@@ -1269,7 +1269,6 @@ main{
 .img_itog{
     height: 47px;
     background: url(../img/линия\ подитога.jpg) bottom/100% 3px no-repeat;
-    
 }
 .sum_price{
     margin: 12px 0 20px;
@@ -1278,7 +1277,6 @@ main{
 }
 .sum_price table{
     width: 100%;
-
 }
 .sum_price td:nth-child(1){
     text-align: left;
@@ -1287,6 +1285,7 @@ main{
     text-align: right;
     font-size: 28px;
 }
+
 .prices input{
     color: white;
     background-color: #63b5ae;
@@ -1420,6 +1419,30 @@ main{
     }
 }
 
+/*Custom Arrows*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  height: 25px;
+  width: 25px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*.img-svg path{
+
+    fill: grey;/*#36486e;
+    stroke: #ff6c00 ; /* цвет обводки 
+    stroke-width: 9px; /* толщина обводки 
+    stroke-opacity: .3; /* прозрачность обводки 
+}*/
+.next {
+  right: 0;
+}
+
+/*-------------*/
+
 .review{
     padding-top: 107px;
     height: 575px;
@@ -1438,7 +1461,14 @@ main{
 .img8{
     height: 140px;
     width: 100%;
-    background: url(../img/фотка3.png) center 72% no-repeat;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    /*background: url(../img/фотка3.png) center 72% no-repeat;*/
+}
+.img8 img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
 }
 .review p{
     margin: 9px 0 17px;
@@ -1452,7 +1482,7 @@ main{
 .rev-par1{
     line-height: 20px;
 }
-.img-t1{
+/*.img-t1{
     height: 75px;
     width: 25px;
     float: left;
@@ -1470,7 +1500,7 @@ main{
     width: 25px;
     float: left;
     background: url(../img/Оранж\ копия\ 2.png) center no-repeat;
-}
+}*/
 @media (max-width: 1199px)
 {
     .review{
@@ -1486,15 +1516,34 @@ main{
     }
     
 }
+.slider__reviews{
+    transition: opacity 1.5s;
+    opacity: 1;
+}
 
-
-.my_contacts{
-    padding-top: 107px;
+.img_contacts{
+    position: absolute;
+    width: 100%;
     height: 825px;
-    background: url(../img/Фон3.jpg) center/cover no-repeat;
+    z-index: -1;
+}
+.img_contacts img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-position: center;
+    object-fit: cover;
+    
+}
+.my_contacts{
+    
+    height: 825px;
+    /*background: url(../img/Фон3.jpg) center/cover no-repeat;*/
     color: white;
 }
 .my_contacts h3{
+    padding-top: 107px;
     font-size: 30px;
     font-weight: bold;
     

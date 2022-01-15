@@ -10,9 +10,15 @@
     <meta property="og:title" content="Это моя первая страница...">
 
     <title>Андрей Браун - Веб-разработчик</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="css/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
 </head>
 <!--<div class="loader" id="loader1">
     <div class=""></div>
@@ -84,7 +90,7 @@
     <main>
         <div class="upper_container">
             <div class="upper_body">
-                <a href="#top"><img src="img/button-up5.png" alt="стрелка вверх"></a>
+                <a href="#top"><img src="img/Button_Up.png" alt="стрелка вверх"></a>
             </div>
         </div>
         <section class="main">
@@ -93,7 +99,7 @@
                     
                     <div class="col-lg-7 col-12 d-flex flex-column justify-content-center mt-5 pt-5">
                         <div class="title__container">
-                            <h1>Привет <br> Я Андрей Браун</h1>
+                            <h1 class="main__title">Привет <br> Я Андрей Браун</h1>
                             <h4>Фулл стек веб-разработчик и Android-разработчик</h4>
                             <input type="button" value="Обо мне">
                             <input type="button" value="Мои работы">
@@ -226,7 +232,11 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="img5 uploaded element-animation"> <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" > </div>
+                    <div class="img5 uploaded uploaded-slider element-animation" data-allowfullscreen="native" data-trackpad="true" data-loop="true">
+                        <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
+                        <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
+                        <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -321,11 +331,11 @@
                             <table >
                                 <tr>
                                     <td>Сроки</td>
-                                    <td>0</td>
+                                    <td id = "timeDev">0</td>
                                 </tr>
                                 <tr>
                                     <td>Стоимость</td>
-                                    <td>0</td>
+                                    <td id = "priceDev">0</td>
                                 </tr>
                             </table>
                         </div>
@@ -425,30 +435,75 @@
                 <div class="col-auto">
                     <h3>ОТЗЫВЫ</h3>
                     <div class="img7 element-animationX"> </div>
-                    <div class="img8 element-animationX"> </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-11 col rev-par">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
+                <div class="col-md-7 invisible  autoplay">
+                    <div class="rev1">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div class="img8"> <img src="img/фотка3.png" alt="отзыв 1"> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col rev-par">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 rev-par1">
+                                <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev2">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div class="img8"> <img src="img/фотка3.png" alt="отзыв 1"> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col rev-par">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 rev-par1">
+                                <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev3">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div class="img8"> <img src="img/фотка3.png" alt="отзыв 1"> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col rev-par">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ducimus minus provident corporis dignissimos! Odio quia sunt eum dignissimos reiciendis!</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 rev-par1">
+                                <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-8 rev-par1">
-                    <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
+            <!--<div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="img-t1"> </div>
                     <div class="img-t2"> </div>
                     <div class="img-t3"> </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 
     <section class="section my_contacts" id="my_contacts">
+        <div class="img_contacts uploaded"> <img src="img/Фон3_bad.jpg" data-src="img/Фон3_good.jpg" alt="фон контакты"> </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
@@ -582,8 +637,17 @@
 </main>
 
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+<!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="js/bootstrap.bundle.min.js"> </script>
 <script src="js/myScript.js"></script>
+<!--
+<script src="js/slick.min.js"></script>
+ jQuery 1.8 or later, 33 KB 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ Fotorama from CDNJS, 19 KB 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+-->
 </body>
 </html>
 
