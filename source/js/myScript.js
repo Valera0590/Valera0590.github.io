@@ -189,8 +189,8 @@ $(document).ready(function() {
                     autoplay: true,
                     autoplaySpeed: 2500,
                     dots: true,
-                    prevArrow: "<img src='../img/left-arrow.png' class='prev' alt='1'>",
-                    nextArrow: "<img src='../img/right-arrow.png' class='next' alt='2'>",
+                    prevArrow: "<img src='img/left-arrow.png' class='prev' alt='1'>",
+                    nextArrow: "<img src='img/right-arrow.png' class='next' alt='2'>",
                 });   
             }
         });
