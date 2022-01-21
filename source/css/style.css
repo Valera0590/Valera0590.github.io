@@ -498,8 +498,8 @@ body{
 }
 .upper_body img{
     position: absolute;
-    width: 85px;
-    height: 85px;
+    width: 87px;
+    height: 87px;
     top: calc(100vh - 110px);
     left: calc(2vw - 1px);
     transform: scale(1);
@@ -519,41 +519,109 @@ body{
     width:auto;
     max-width: 580px;
     margin: 20px auto;
+    border-radius: 20px;
 }
 .popup__body {
     padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+.popup__bg__body {
+    position: absolute;
+    margin: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.popup__bg__sale {
+    object-fit: fill;
+    height: inherit;
+    width: inherit;
+    border-radius: 20px;
+    object-position: bottom;
 }
 .popup__title {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .popup__title__text {
-    font-size: 24px;
-    line-height: calc(30 / 24 * 100%);
-
+    font-size: 25px;
+    line-height: calc(30 / 27 * 100%);
+    color: #29292b;
+    text-align: center;
 }
+
 .popup__form__body {
+    display: flex;
+    flex-direction: column;
 }
 .form__body{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 }
-.form__input{
-    display: flex;
+.form__input__body{
     flex: 0 1 50%;
 }
+.form__input__body:nth-child(1){
+    padding-right: 10px;
+}
+.form__input__body:nth-child(2){
+    padding-left: 10px;
+}
+.form__input{
+    width: 100%;
+    padding: 0 12px;
+    color: #5d5d5e;
+    background-color: #e3e5e7f5;
+    font-size: 15px;
+    border-radius: 4px;
+    height: 35px;
+}
 .form__textarea{
-    display: flex;
     flex: 1 1 100%;
+    color: #5d5d5e;
+    background-color: #e3e5e7f5;
+    font-size: 15px;
+    resize: none;
+    margin: 15px 0;
+    padding: 10px 12px;
+    
+    border-radius: 4px;
 }
 .form__button__body {
     display: flex;
     flex: 1 1 100%;
     justify-content: center;
+    margin-top: 10px;
 }
 .form__send {
+    height: 49px;
+    padding: 0 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #e3e5e7f5;
+    border: #e3e5e7f5 solid 2.8px;
+    border-radius: 6px;
+}
+.form__send input{
+    background: transparent;
+    font-size: 18px;
+    color: #505050;
 
 }
+.form__send input:hover{
+    transition: all 0.2s;
+}
+.form__send:hover{
+    transform: scale(1.025);
+    transition: all 0.2s;
+}
+
+.form__send:active{
+    transform: scale(1.07);
+    transition: all 0.1s;
+}
+
 /*------------------------------------*/
 
 nav{
