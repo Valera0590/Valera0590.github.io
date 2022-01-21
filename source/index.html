@@ -18,6 +18,8 @@
     <link href="css/fotorama.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">    
     
 </head>
 <!--<div class="loader" id="loader1">
@@ -91,6 +93,25 @@
         <div class="upper_container">
             <div class="upper_body">
                 <a href="#top"><img src="img/Button_Up.png" alt="стрелка вверх"></a>
+            </div>
+        </div>
+        <div class="popup white-popup mfp-hide" id="popup">
+            <div class="popup__body">
+                <div class="popup__title">
+                    <div class="popup__title__text">Если вы сейчас закажете разработку сайта, то вам будет предоставлена скидка в размере 15%.</div>
+                </div>
+                <div class="popup__form__body">
+                    <form action="a">
+                        <div class="form__body">
+                            <div class="form__input"><input type="text" name="name1" placeholder="Имя" class="" id=""></div>
+                            <div class="form__input"><input type="text" name="email1" placeholder="Email" class="" id=""></div>
+                            <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение" class="form__textarea"></textarea>
+                            <div class="form__button__body">
+                                <div class="form__send"><input type="submit" value="Отправить"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <section class="main">
@@ -233,6 +254,9 @@
             <div class="row">
                 <div class="col">
                     <div class="img5 uploaded uploaded-slider element-animation" data-allowfullscreen="native" data-trackpad="true" data-loop="true">
+                        <!--<a href="img/фотка2_good.png"></a>
+                        <a href="img/фотка2_good.png"></a>
+                        <a href="img/фотка2_good.png"></a>-->
                         <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
                         <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
                         <img src="img/фотка2_bad.png" data-src="img/фотка2_good.png" alt="пример сайта" >
@@ -359,7 +383,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col stats-tab1 visible">
+                <div class="col stats-tab1">
                     <table>
                         <tr>
                             <td>
@@ -389,7 +413,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col stats-tab2 visible">
+                <div class="col stats-tab2">
                     <table>
                         <tr>
                             <td>
@@ -438,7 +462,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-7 invisible  autoplay">
+                <div class="col-md-7 col-sm-11 invisible autoplay">
                     <div class="rev1">
                         <div class="row justify-content-center">
                             <div class="col-auto">
@@ -564,7 +588,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-9 col-md-10 col">
-                            <form action="a">
+                            <form class="form__contacts1" action="a">
                                 <input type="text" name="name1" placeholder="Имя" class="inp1" id="">
                                 <input type="text" name="email1" placeholder="Email" class="inp2" id=""> <br>
                                 <textarea name="message" id="2" cols="50" rows="5" placeholder="Сообщение"></textarea> <br>
@@ -640,14 +664,17 @@
 <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 <!--<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="js/bootstrap.bundle.min.js"> </script>
+<script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/myScript.js"></script>
 <!--
 <script src="js/slick.min.js"></script>
  jQuery 1.8 or later, 33 KB 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  Fotorama from CDNJS, 19 KB 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
--->
+<script src="js/fotorama.js"></script>-->
+
 </body>
 </html>
 

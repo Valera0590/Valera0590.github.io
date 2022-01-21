@@ -1,6 +1,23 @@
 "use strict"
 $(document).ready(function() {
     $('.overlay, .cssload-dots').fadeOut();
+    $(".section").each((i,el) => {
+        if($(el).offset().top - $("nav").outerHeight() - 60 <= $(window).scrollTop()){
+            $(".menu li a").each((i,el) => {
+                if($(el).hasClass("active_menu")){
+                    $(el).removeClass("active_menu");
+                }
+            });
+            $('.menu li:eq('+i+')').find('a').addClass("active_menu");
+
+            $(".dropdown li a").each((i,el) => {
+                if ($(el).hasClass("active")){
+                    $(el).removeClass("active");
+                }
+            });
+            $('.dropdown li:eq('+i+')').find('a').addClass("active");
+        }
+    });
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
 
@@ -127,6 +144,21 @@ $(document).ready(function() {
     elementsCount2.each((i,el) => {
         observerCount.observe(el);
     });
+
+    $(window).resize(function(){
+        if($('.stats-tab1').hasClass('vision'))
+            if($(window).width() <= 400){
+                $('.stats-tab1').removeClass('vision');
+                $('.stats-tab2').addClass('vision');
+            }
+            else return;
+        else if($('.stats-tab2').hasClass('vision'))
+            if($(window).width() > 400){
+                $('.stats-tab2').removeClass('vision');
+                $('.stats-tab1').addClass('vision');
+            }
+    });
+
     let optionsBtnUp = {threshold: [0.01]};
     let observerBtnUp = new IntersectionObserver( (entry) => {
         entry.forEach(change => {
@@ -182,7 +214,7 @@ $(document).ready(function() {
                 if($('.autoplay').hasClass('invisible'))
                     $('.autoplay').removeClass('invisible');
                 $('.autoplay').addClass('slider__reviews');
-                $('body').append($('<script src="js/slick.min.js"></script>'));
+                //$('body').append($('<script src="js/slick.min.js"></script>'));
                 $('.autoplay').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -199,30 +231,51 @@ $(document).ready(function() {
     elementsLoadSlider2.each((i,el) => {
         observerLoadSlider2.observe(el);
     });
-    
-    /*$('img.img-svg').each(function(){
-        var $img = $(this);
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-        $.get(imgURL, function(data) {
-          var $svg = $(data).find('svg');
-          if(typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass+' replaced-svg');
-          }
-          $svg = $svg.removeAttr('xmlns:a');
-          if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-          }
-          $img.replaceWith($svg);
-        }, 'xml');
-    });*/
 
-        
-        /*alert("Чтобы мы смогли рассчитать примерную цену разработки сайта, пожалуйста заполните несколько пунктов. Для продолжения нажмите OK!");
-        order[0] = prompt("Выберите из списка нужный тип сайта и введите соответствующую цифру (сайт-визитка: 0, корпоративный сайт: 1, интернет-магазин: 2, инфо сайт: 3, игровой портал: 4, персональный проект: 5, контент-проект: 6, промо-сайт: 7, сайт-форум: 8, блог: 9).",'');
-        order[1] = prompt("Выберите из списка нужный дизайн сайта и введите соответствующую цифру (жесткий: 0, гибкий: 1, комбинированный: 2, текстовый: 3, полиграфический: 4, интерфейсный: 5, динамический: 6).",'');
-        order[2] = prompt("Выберите из списка нужный тип адаптивности сайта и введите соответствующую цифру (только для ПК: 0, только для мобилок: 1, под все типы устройств: 2).",'');
-        */
-       //alert("Разработка вашего сайта с учётом выбранных вами характеристик будет стоить: " + priceSite + "; за время: " + devTimeSite);
+    setTimeout(function(){
+
+        // Open directly via API
+        $.magnificPopup.open({
+            /*items: {
+                src: '//https://www.youtube.com/watch?v=KI_Nc01JK8E',
+                disableOn: 700,
+		        type: 'iframe',
+		        mainClass: 'mfp-fade',
+		        removalDelay: 160,
+		        preloader: false,
+
+		        fixedContentPos: false
+            }*/
+            items: {
+                src: '#popup', // can be a HTML string, jQuery object, or CSS selector
+                type: 'inline'
+            }
+            /*
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">'+
+                          '<div class="mfp-close"></div>'+
+                          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                        '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+                
+                patterns: {
+                  youtube: {
+                    index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+              
+                    id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                    // Or null - full URL will be returned
+                    // Or a function that should return %id%, for example:
+                    // id: function(url) { return 'parsed id'; }
+              
+                    src: '//www.youtube.com/watch?v=VJcIaUVcheE/%id%?autoplay=1' // URL that will be set as a source for iframe.
+                  }
+              
+                  // you may add here more sources
+              
+                },
+              
+                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+              }*/
+        });
+    }, 2000);
 
  });

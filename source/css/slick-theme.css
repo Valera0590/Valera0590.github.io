@@ -2,7 +2,7 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -179,15 +179,15 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 45px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 14px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
 
     content: '•';
     text-align: center;
@@ -202,4 +202,5 @@
 {
     opacity: .75;
     color: #e46500;
+    font-size: 14px;
 }

@@ -38,6 +38,19 @@
     cursor: hand;
 }
 
+/*--------Custom slick-list*/
+@media(max-width: 1400px){
+    .slick-list{
+        margin: 0 15px;
+    }
+}
+@media(max-width: 1200px){
+    .slick-list{
+        margin: 0 22px;
+    }
+}
+/*-------------------------*/
+
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {

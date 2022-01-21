@@ -511,6 +511,50 @@ body{
 .upper_body img:active{
     transform: scale(1.05);
 }
+/*------------Popup-------------------*/
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width:auto;
+    max-width: 580px;
+    margin: 20px auto;
+}
+.popup__body {
+    padding: 10px 20px;
+}
+.popup__title {
+    margin-bottom: 25px;
+}
+.popup__title__text {
+    font-size: 24px;
+    line-height: calc(30 / 24 * 100%);
+
+}
+.popup__form__body {
+}
+.form__body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form__input{
+    display: flex;
+    flex: 0 1 50%;
+}
+.form__textarea{
+    display: flex;
+    flex: 1 1 100%;
+}
+.form__button__body {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+.form__send {
+
+}
+/*------------------------------------*/
 
 nav{
     width: 100%;
@@ -1342,15 +1386,17 @@ main{
     color: #323e4f;
 }
 .stats-tab1{
+    transition: opacity 0.3s;
     opacity: 0;
 }
 .stats-tab2{
     display: none;
+    transition: opacity 0.3s;
     opacity: 0;
 }
 .vision{
-        transition: opacity 0.5s;
-        opacity: 1;
+    transition: opacity 0.5s;
+    opacity: 1;
 }
 .stats td:nth-child(1),
 .stats td:nth-child(2),
@@ -1395,11 +1441,15 @@ main{
 @media (max-width: 400px){
     .stats-tab1{
         display: none;
+        transition: opacity 0.2s;
+        opacity: 0;
     }
     .stats-tab2{
         display: table;
         padding-right: 5%;
         margin-top: 20px;
+        transition: opacity 0.5s;
+        opacity: 1;
     }
     .stats{
         height: 560px;
@@ -1429,14 +1479,6 @@ main{
   z-index: 2;
   cursor: pointer;
 }
-
-/*.img-svg path{
-
-    fill: grey;/*#36486e;
-    stroke: #ff6c00 ; /* цвет обводки 
-    stroke-width: 9px; /* толщина обводки 
-    stroke-opacity: .3; /* прозрачность обводки 
-}*/
 .next {
   right: 0;
 }
@@ -1527,6 +1569,11 @@ main{
     height: 825px;
     z-index: -1;
 }
+@media (max-width: 768px) {
+    .img_contacts{
+        height: 850px;
+    }
+}
 .img_contacts img{
     width: 100%;
     height: 100%;
@@ -1537,7 +1584,6 @@ main{
     
 }
 .my_contacts{
-    
     height: 825px;
     /*background: url(../img/Фон3.jpg) center/cover no-repeat;*/
     color: white;
@@ -1558,11 +1604,6 @@ main{
     font-size: 17px;
     text-align: center;
     padding-bottom: 42px;
-}
-@media (max-width: 767px){
-    .my_contacts{
-        padding-top: 90px;
-    }
 }
 .cont-tab table{
     text-align: center;
@@ -1599,12 +1640,14 @@ main{
         padding-bottom: 16px;
     }
     .my_contacts{
-        padding-top: 60px;
-        height: 915px;
+        height: 945px;
+    }
+    .img_contacts{
+        height: 945px;
     }
 }
 
-form > input{
+.form__contacts1 > input{
     width: 48.79%;
     height: 34px;
     padding: 0 12px;
@@ -1616,7 +1659,7 @@ form > input{
 .inp1{
     margin-right: 2%;
 }
-form textarea{
+.form__contacts1 textarea{
     width: 100%;
     height: 94px;
     padding: 10px 12px;
@@ -1650,27 +1693,22 @@ form textarea{
     transition: all 0.1s;
 }
 @media (max-width: 1399px){
-    form > input{
+    .form__contacts1 > input{
         width: 48.76%;
     }
 }
 @media (max-width: 1199px){
-    form > input{
+    .form__contacts1 > input{
         width: 48.75%;
     }
 }
 @media (max-width: 991px){
-    form > input{
-        width: 48.7%;
-    }
-}
-@media (max-width: 767px){
-    form > input{
+    .form__contacts1 > input{
         width: 48.66%;
     }
 }
 @media (max-width: 529px){
-    form > input{
+    .form__contacts1 > input{
         width: 48.6%;
     }
     .inp1{
@@ -1678,7 +1716,7 @@ form textarea{
     }
 }
 @media (max-width: 440px){
-    form > input{
+    .form__contacts1 > input{
         width: 100%;
     }
     .inp1{
